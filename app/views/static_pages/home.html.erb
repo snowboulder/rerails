@@ -1,6 +1,15 @@
+<div class="center jumbotron">
+  <h1>Refresher Rails!</h1>
 
-<h1>Refresher Rails!</h1>
-<p>
-  This is the homepage for the Refresher Rails app! <br>
-  I will be really good at Ruby on Rails. Mark my words!
-</p>
+  <h2>
+    This is the home page for the Refresher Rails application.
+  </h2>
+
+  <%= link_to "Sign up now! and you get a cat below!", signup_path, class: "btn btn-lg btn-primary" %><br>
+  <%#= link_to image_tag("kitten.jpg", alt: "Cat!"),
+              'cdn.learnenough.com' %>
+  <br>
+</div>
+
+<%= link_to image_tag("rails.png", alt: "Rails logo"),
+            'http://rubyonrails.org/' %>
