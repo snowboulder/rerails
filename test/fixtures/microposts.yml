@@ -1,0 +1,47 @@
+
+beef:
+  content: "I love beef!"
+  created_at: <%= 10.minutes.ago %>
+  user: kevin
+
+chicken:
+  content: "Chicken has lots of protein!"
+  created_at: <%= 3.years.ago %>
+  user: kevin
+
+pork:
+  content: "God dam! Bossam is really delicious!"
+  created_at: <%= 2.hours.ago %>
+  user: kevin
+
+lamb_recent:
+  content: "baaaaaah!"
+  created_at: <%= Time.zone.now %>
+  user: kevin
+
+<% 30.times do |n| %>
+micropost_<%= n %>:
+  content: <%= Faker::Lorem.sentence(5) %>
+  created_at: <%= 42.days.ago %>
+  user: kevin
+<% end %>
+
+avacado:
+  content: "Avacado and chips are the best!"
+  created_at: <%= 2.years.ago %>
+  user: kevin
+
+bossam:
+  content: "Bossam is the best korean food"
+  created_at: <%= 3.days.ago %>
+  user: jarjar
+
+jokbal:
+  content: "Comparable to Bossam"
+  created_at: <%= 10.minutes.ago %>
+  user: lana
+
+wall:
+  content: "How can I live? How can I breathe?"
+  created_at: <%= 4.hours.ago %>
+  user: kevin
